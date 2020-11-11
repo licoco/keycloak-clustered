@@ -40,7 +40,7 @@ JGROUPS_DISCOVERY_PROPERTIES=datasource_jndi_name=java:jboss/datasources/Keycloa
 
 ## Supported tags and respective Dockerfile links
 
-- `11.0.3`, `latest` ([Dockerfile](https://github.com/licoco/keycloak-clustered/blob/master/11.0.3/Dockerfile))
+- `11.0.3  `latest  ([Dockerfile](https://github.com/licoco/keycloak-clustered/blob/master/11.0.3/Dockerfile))
 - `11.0.2` ([Dockerfile](https://github.com/ivangfr/keycloak-clustered/blob/master/11.0.1/Dockerfile))
 - `11.0.1` ([Dockerfile](https://github.com/ivangfr/keycloak-clustered/blob/master/11.0.1/Dockerfile))
 - `11.0.0` ([Dockerfile](https://github.com/ivangfr/keycloak-clustered/blob/master/11.0.0/Dockerfile))
