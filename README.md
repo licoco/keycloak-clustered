@@ -40,7 +40,8 @@ JGROUPS_DISCOVERY_PROPERTIES=datasource_jndi_name=java:jboss/datasources/Keycloa
 
 ## Supported tags and respective Dockerfile links
 
-- `11.0.2`, `latest` ([Dockerfile](https://github.com/ivangfr/keycloak-clustered/blob/master/11.0.2/Dockerfile))
+- `11.0.3`, `latest` ([Dockerfile](https://github.com/licoco/keycloak-clustered/blob/master/11.0.3/Dockerfile))
+- `11.0.2` ([Dockerfile](https://github.com/ivangfr/keycloak-clustered/blob/master/11.0.1/Dockerfile))
 - `11.0.1` ([Dockerfile](https://github.com/ivangfr/keycloak-clustered/blob/master/11.0.1/Dockerfile))
 - `11.0.0` ([Dockerfile](https://github.com/ivangfr/keycloak-clustered/blob/master/11.0.0/Dockerfile))
 - `10.0.2` ([Dockerfile](https://github.com/ivangfr/keycloak-clustered/blob/master/10.0.2/Dockerfile))
@@ -94,7 +95,7 @@ Please, refer to the official `jboss/keycloak` documentation at https://hub.dock
   -e DB_USER=keycloak \
   -e DB_PASSWORD=password \
   -e JDBC_PARAMS=useSSL=false \
-  ivanfranchin/keycloak-clustered:latest
+  licoco/keycloak-clustered:latest
   ```
 
 - Run `keycloak-clustered-2`
@@ -110,7 +111,7 @@ Please, refer to the official `jboss/keycloak` documentation at https://hub.dock
   -e DB_USER=keycloak \
   -e DB_PASSWORD=password \
   -e JDBC_PARAMS=useSSL=false \
-  ivanfranchin/keycloak-clustered:latest
+  licoco/keycloak-clustered:latest
   ```
 
 ### Check if keycloak-clustered instances are sharing user sessions
@@ -154,7 +155,7 @@ Please, refer to the official `jboss/keycloak` documentation at https://hub.dock
   ```
   vagrant up
   ```
-   
+  
 - Wait a bit until the virtual machines get started. It will take some time.
 
 - Once all the execution of the command `vagrant up` finishes, we can check the state of all active Vagrant environments
@@ -199,7 +200,7 @@ Please, refer to the official `jboss/keycloak` documentation at https://hub.dock
     > **Note 1:** If you are using `JDBC_PING`, you can select `JGROUPSPING` table and see the machine records, `SELECT * FROM JGROUPSPING;`
     >
     > **Note 2:** To exit type `exit`
-     
+    
   - Postgres
     ```
     vagrant@vagrant:~$ docker exec -it postgres psql -U keycloak
@@ -238,7 +239,7 @@ Please, refer to the official `jboss/keycloak` documentation at https://hub.dock
   ```
   vagrant reload keycloak1 keycloak2 --provision
   ```
-   
+  
 ### Changing discovery protocol script
 
 - In the host machine, go to the version folder where the script is, open and edit it
